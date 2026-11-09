@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="favorite-devo/styles/styles.css" />
+</head>
+<nav>
+    <a href=index.html id="backButton">Back</a>
+</nav>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+         <table>
+          <!-- tr stands for Table Row -->
+          <tr>
+            <!-- th stands for Table Heading -->
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>David A Bednar</td>
+            <td>BYU-Idaho 25th Anniversary Devotional</td>
+            <td>BYU-Idaho</td>
+            <td>2026</td>
+          </tr>
+          <tr>
+            <td>Jeffery R Holland</td>
+            <td>Remember Lot's Wife</td>
+            <td>BYU</td>
+            <td>2009</td>
+          </tr>
+          <tr>
+            <td>James O Fantone</td>
+            <td>The Battle is the Lords</td>
+            <td>BYU-Idaho</td>
+            <td>2026</td>
+          </tr>
+         </table>
+         <div>
+          <form id="devo-form">
+          <!-- labels -->
+          <label for="speaker-name">Speaker: </label> 
+          <label for="title-name">Title: </label>
+          <label for="location-name">Location: </label>
+          <label for="year">Year: </label>
+          <!-- speaker name input -->
+          <input type="text" id="speaker-name">
+          <!-- title input -->
+          <input type="text" id="title-name">
+          <!-- Location input -->
+          <input type="text" id="location-name">
+          <!-- year input -->
+          <input type="text" id="year">
+          <!-- submit button -->
+          <input type="submit" value="submit" id="submit">
+         </form>
+        </div>
+         
+      </div>
+    </main>
+  </div>
+</body>
+</html>
